@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+    <meta name="description" content="portfolio IT">
+    <meta name="keywords" content="specialist, portfolio, linux, patrusheva violett, hakloi, quiror">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="120"><link rel="preconnect"> 
+</head>
+
+<body>
+    <!--  MENU - NAVIGATION  -->
+    <special-header></special-header>
+    
+    <script src="/JavaScript/headerFooterManager.js"></script>
+    <!--MOUSE ANIMATION-->
+         <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+    <div class="info-text">
+        <center><h2>Welcome to My Blog</h2></center>
+    </div>
+    
+
+    <!-- BLOG MAIN SECTION -->
+    <div class="blog-container">
+
+        <!-- BLOG POST 1 -->
+        <div class="blog-post">
+            <h2>History command inside bash script</h2>
+            <p class="post-date">Posted on August 16, 2024</p>
+            <p class="post-content">
+                #!/bin/bash
+                history |  tail -100 > /tmp/history.log
+                cd /tmp...
+            </p>
+            <a href="blog.html" class="read-more">Read more...</a>
+        </div>
+
+        <!-- BLOG POST 2 -->
+        <div class="blog-post">
+            <h2>DevOps in Linux — pstree Command</h2>
+            <p class="post-date">Posted on July 30, 2024</p>
+            <p class="post-content">
+                $ pstree
+                systemd─┬─acpid
+                        ├─2*[agetty]
+                        ├─amazon-ssm-agen─┬─ssm-agent-worke───9*[{ssm-agent-worke}]
+                        │                 └─8*[{amazon-ssm-agen}]
+                        ├─atd
+                        ├─auditd───{auditd}
+                        ├─chronyd...
+            </p>
+            <a href="blog.html" class="read-more">Read more...</a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <special-footer></special-footer>
+    
+    <!--JS scripts-->
+    <script src="JavaScript/changes.js"></script>
+
+</body>
+
+</html>

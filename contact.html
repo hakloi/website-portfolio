@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name="description" content="portfolio IT">
+    <meta name="keywords" content="specialist, portfolio, linux, patrusheva violett, hakloi, quiror">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <!--  MENU - NAVIGATION  -->
+    <special-header></special-header>
+    
+    <script src="/JavaScript/headerFooterManager.js"></script>
+    <!--MOUSE ANIMATION-->
+         <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+    
+
+<!-- INFO -->
+<div class="info-text">
+    <h2>Contact Me:</h2>
+    <p>Need something done right? Reach out if you're serious. Whether it's locking down your system or building it from scratch, I'm the one you're looking for. Just remember, I don't do small talk.</p>
+    <p>If you're ready, fill in the form below. But be quick, I don't wait around.</p>
+</div>
+
+    
+<div class="info-text">
+    <img src="images/money.jpg" alt="funny image of Linux mascot with money">
+    <center><p>***</p></center>
+</div>
+    
+<!-- SERVICES -->
+<div class="info-text">
+    <div class="booking">
+        <h2>Services:</h2>
+        <ul>
+            <li><b>Security Audits:</b> <i><b>$200</b></i>
+                <p>Comprehensive security assessments of websites, networks, and applications to identify vulnerabilities and strengthen defenses.</p>
+            </li>
+            <li><b>Custom Software Development:</b> <i><b>$500+</b></i>
+                <p>Development of tailored software solutions for businesses or personal use, with a focus on security and performance.</p>
+            </li>
+            <li><b>Penetration Testing:</b> <i><b>$300</b></i>
+                <p>Ethical hacking services to test your system's resilience against cyberattacks and recommend protective measures.</p>
+            </li>
+            <li><b>Linux System Setup:</b> <i><b>$150</b></i>
+                <p>Installation, configuration, and optimization of Linux environments for servers or personal computers.</p>
+            </li>
+            <li><b>Backend Development (Python, Flask):</b> <i><b>$400+</b></i>
+                <p>Custom backend solutions with Python and Flask for web applications, with a focus on scalability and security.</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- REQUEST FORM-->
+<div class="center-container">
+    <div class="form">
+        <form>
+            <div class="form-item">
+                <label for="fname" class="label-design">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Ada" class="input-design">
+            </div>
+
+            <div class="form-item">
+                <label for="lname" class="label-design">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Lovelace" class="input-design">
+            </div>
+
+            <div class="form-item">
+                <label for="service" class="label-design">Service Requested:</label>
+                <select id="service" name="service" class="input-design">
+                    <option value="security-audit">Security Audits</option>
+                    <option value="software-development">Custom Software Development</option>
+                    <option value="penetration-testing">Penetration Testing</option>
+                    <option value="linux-setup">Linux System Setup</option>
+                    <option value="backend-development">Backend Development</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="num" class="label-design">Number:</label>
+                <input type="text" id="num" name="num" placeholder="+0987654321" class="input-design">
+            </div>
+
+            <div class="form-item">
+                <label for="date" class="label-design">Preferred Date:</label>
+                <input type="date" id="date" name="date" value="2024-08-16" min="2024-08-16" max="2025-01-01" class="input-design">
+            </div>
+
+            <div class="form-item">
+                <label for="payment" class="label-design">Payment Method:</label>
+                <select id="payment" name="payment" class="input-design">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="crypto">Crypto</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <input type="submit" class="submit" id="submitButton" value="Submit">
+                <input type="reset" class="reset" id="resetButton" value="Reset">
+            </div>
+        </form>
+        
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('submitButton').addEventListener('click', function () {
+                    alert('Submit button clicked!');
+                });
+                document.getElementById('resetButton').addEventListener('click', function () {
+                    alert('Reset button clicked!');
+                });
+            });
+        </script>
+    </div>
+</div>
+    
+<div class="info-text">
+    <center><p>***</p></center>
+    <img src="images/money.jpg" alt="funny image of Linux mascot with money">
+</div>
+
+    <!-- FOOTER -->
+    <special-footer></special-footer>
+    
+    <!--JS scripts-->
+    <script src="JavaScript/changes.js"></script>
+    
+</body>
+
+</html>

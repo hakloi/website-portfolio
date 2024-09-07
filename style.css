@@ -1,0 +1,465 @@
+/*IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+/*web resposive ------------------------------------*/
+/*Mobile*/
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        font-size: 1.6rem; /* Adjust font size for mobile */
+        padding: 15px 0px 20px;
+    }
+    
+    .forecast {
+        font-size: 16px; /* Adjust font size for mobile */
+        float: none;     /* Reset float for mobile layout */
+        text-align: center;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px){
+    .wrapper {
+        display:block;
+        width: 100%;
+        padding: 20px 0px 30px;
+        background-image: url(images/header.jpg);
+        color: white;
+        font-family: "DM Serif Display", serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: normal;
+    }
+    
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1200px){
+    .forecast {
+        font-family: "DM Serif Display", serif;
+        font-size: 20px;
+        float: right;
+    }
+}
+    
+/*-----------------------------------------------------*/
+/*COMMON STYLE*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/back.jpg');
+    background-size: cover;         /* Ensures the image covers the entire area */
+    background-position: center;    /* Centers the image */
+    background-repeat: no-repeat;   /* Prevents the image from tiling */
+    background-attachment: fixed;   /* Keeps the background fixed during scrolling */
+}
+
+
+.wrapper {
+    width: 100%;
+    padding: 20px 0px 30px;
+    background-image: url(images/header.jpg);
+    background-size: cover;          /* Ensures the image covers the entire area */
+    background-position: center;     /* Centers the image */
+    background-repeat: no-repeat;    /* Prevents image tiling */
+    color: white;
+    font-family: "DM Serif Display", serif;
+    font-size: 2.0rem;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.description {
+    padding: 0px 10px 0px;
+    font-family: "Handjet", serif;
+    color: white;
+    font-size: 1.9rem;
+}
+
+.medium{
+    font-size: 2.4rem;
+}
+
+.default{
+    font-size: 1.6rem;
+}
+
+#smallA, #bigA{
+    cursor: pointer;
+}
+
+.info-text {
+    padding: 1rem 9rem;
+    color: black;
+    font-family: "DM Serif Display", serif;
+    font-size: 1.4rem;
+}
+
+h2 {
+    text-shadow: 0 0 5px lightgreen;
+}
+
+h1 {
+    font-family: "Handjet", serif;
+}
+
+.info-text {
+    padding: 0.8rem 2.3rem 0.8rem ;
+    color: lightgreen;
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+}
+
+.info-text ul {
+    padding: 0.8rem 2.3rem 0.8rem ;
+    color: aquamarine;
+    font-family: "Handjet", serif;
+    font-size: 1.7rem;
+}
+
+a:hover {
+    text-shadow: 0 0 2px #767F3C;
+}
+a {
+    color: white; 
+    text-decoration: none;
+}
+
+
+
+/* NAVIGATION ------------------------------------- */
+nav { 
+    grid-area: nav; 
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: #3E2723;
+        border: 1px solid #3E2723;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ol {
+        border: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        border-bottom: 1px solid white;
+        padding: 10px 0;
+    }
+
+    nav li a {
+        font-family: "Handjet", serif;
+        font-style: normal;
+        text-decoration: none;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: white;
+        display: block;
+        padding: 10px;
+    }
+
+    label, #toggle {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1010px){
+    nav {
+        background-color: #858D51;
+        border: 1px solid #858D51;
+        text-align: center;
+        width: 100%;  
+    }
+    
+    label {
+        margin: 0 40px 0 0;
+        font-size: 26px;   
+        text-align: center;
+        display: none;
+    }
+    
+    #toggle {
+        display: none;
+    }
+    
+    nav ol {
+        border: 1px solid white;
+        border-width: 1px 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav li {
+        display: inline;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 12px;
+    }
+    
+    nav li a {
+        font-family: "Handjet", serif;
+        font-style: normal;
+        text-decoration: none;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 35px;
+        color: hsl(0, 0%, 255%);
+        display: inline-block;
+        padding: 10px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1011px){
+    nav {
+        background-color: darkslategrey; /*darkslategrey*/
+        border: 1px solid #858D51;
+        text-align: center;
+        width: 100%; 
+    }
+    
+    label {
+        margin: 0 40px 0 0;
+        font-size: 26px;   
+        text-align: center;
+        display: none;
+    }
+    
+    nav ol {
+        border: 1px solid white;
+        border-width: 1px 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav li {
+        display: inline;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 9px;
+    }
+    
+    nav li a {
+        font-family: "Handjet", serif;
+        font-style: normal;
+        text-decoration: none;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 25px;
+        color: white;
+        display: inline-block;
+        padding: 10px;
+    }
+}
+
+
+/*BUTTONS-----------------------------------------*/
+.btn {
+    background: lightgreen;
+    font-size: 2rem; /*rem is used 'cause it adjests with paddings */
+    width: 15%;
+    display: inline-block;
+    font-family: "Handjet", serif;
+    border-color: lightgreen;
+}
+.btn:hover {
+    transition: background-color 0.3s ease;
+    background-color: #71d171;
+}
+
+.submit{
+    background: lightgreen;
+    margin:0.2rem 10rem;
+    text-align: center;
+    display: inline-block;
+    font-family: "Handjet", serif;
+    font-size: 1.6rem;
+    border-color: aquamarine;
+    border-radius: 10px; 
+}
+.submit:hover {
+    transition: background-color 0.3s ease;
+    background-color: #71d171;
+}
+
+.reset {
+    background: coral;
+    margin:0.2rem 10rem;
+    text-align: center;
+    display: inline-block;
+    font-family: "Handjet", serif;
+    font-size: 1.6rem;
+    border-color: coral;
+    border-radius: 10px; 
+}
+.reset:hover {
+    transition: background-color 0.3s ease;
+    background-color: #e87268;
+}
+.menu-button {
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.menu-button:hover {
+    background-color: #6A723B; /* Change to dark green on hover */
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px){
+    .reset{
+        
+    }
+    
+    .submit{
+        
+    }
+
+}
+
+
+/*MOUSE ------------------------------------------*/
+.circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 24px;
+    background-color: aqua;
+    opacity: 0.3;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+
+
+/*REQUEST ----------------------------------------*/
+.center-container {
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    height: 500px;            
+    margin-bottom: 40px; 
+}
+
+.form {
+    background-color: darkslategray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 10 auto;
+}
+
+.label-design {
+    text-align: right;
+    display: inline-block;
+    font-family: "Handjet", serif;
+    font-size: 1.6rem;
+    color: ghostwhite;
+}
+
+.input-design {
+    width: 100%;               
+    padding: 5px;             
+    margin-top: 5px;          
+    margin-bottom: 10px;      
+    border-radius: 10px; 
+}
+
+
+
+/*IMAGES-------------------------------------*/
+.info-text img {
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 300px;
+    float: center;
+}
+
+.info-text img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* BLOG -----------------------------------*/
+.blog-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Handjet', sans-serif;
+}
+
+.blog-post {
+    background-color: rgba(173, 216, 230, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Handjet', sans-serif;
+    font-size: 26px
+}
+
+.blog-post h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Handjet', sans-serif;
+}
+
+.post-date {
+    color: #888;
+
+    margin-bottom: 10px;
+    font-family: 'Handjet', sans-serif;
+}
+
+.post-content {
+
+    color: #555;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/*FOOTER -------------------------------------------*/
+.footer-text {
+    padding: 10px;
+    font-family: "Handjet", serif;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    background-image: url(images/header.jpg);
+}
+
+footer a {
+    color: white; 
+    text-decoration: none;
+}
