@@ -23,7 +23,7 @@
         display:block;
         width: 100%;
         padding: 20px 0px 30px;
-        background-image: url(images/header.jpg);
+        background-image: url(/images/header.jpg);
         color: white;
         font-family: "DM Serif Display", serif;
         font-size: 30px;
